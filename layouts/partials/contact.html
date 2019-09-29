@@ -31,6 +31,15 @@
                         {{ end }}
                     </div>
                 </section>
+                <section>
+                    <div class="contact-method">
+                        {{ range .Site.Params.Contact.link }}
+                        <span class="icon alt {{ .icon }}"></span>
+                        <h3>{{ .title }}</h3>
+                        <a href="{{ .link }}">{{ .text }}</a>
+                        {{ end }}
+                    </div>
+                </section>
                 <!-- <section>
                     <div class="contact-method">
                         <span class="icon alt fa-phone"></span>
